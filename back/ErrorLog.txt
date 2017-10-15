@@ -1,0 +1,48 @@
+******************************************************************************************************************************
+Error occured at 2017-10-15 19:22:27
+Trace:
+file: C:\xampp\htdocs\joint\phones\back\dal\Connection.php => line: 57 => function: execute => class: PDOStatement => type: ->
+file: C:\xampp\htdocs\joint\phones\back\bl\BusinessLogicLayer.php => line: 30 => function: executeSP => class: Connection => type: ->
+file: C:\xampp\htdocs\joint\phones\back\bl\Manufacturer_BLL.php => line: 14 => function: get => class: BusinessLogicLayer => type: ->
+file: C:\xampp\htdocs\joint\phones\back\controllers\ManufacturerController.php => line: 10 => function: get_manufacturers => class: Manufacturer_BLL => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\ManufacturerApi.php => line: 17 => function: get_all_manufacturers => class: ManufacturerController => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\abstract-api.php => line: 14 => function: Read => class: ManufacturerApi => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\api.php => line: 31 => function: gateway => class: Api => type: ->
+Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'phones.directors' doesn't exist
+Code: 42S02
+******************************************************************************************************************************
+Error occured at 2017-10-15 19:22:49
+Trace:
+file: C:\xampp\htdocs\joint\phones\back\dal\Connection.php => line: 57 => function: execute => class: PDOStatement => type: ->
+file: C:\xampp\htdocs\joint\phones\back\bl\BusinessLogicLayer.php => line: 30 => function: executeSP => class: Connection => type: ->
+file: C:\xampp\htdocs\joint\phones\back\bl\Manufacturer_BLL.php => line: 14 => function: get => class: BusinessLogicLayer => type: ->
+file: C:\xampp\htdocs\joint\phones\back\controllers\ManufacturerController.php => line: 10 => function: get_manufacturers => class: Manufacturer_BLL => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\ManufacturerApi.php => line: 17 => function: get_all_manufacturers => class: ManufacturerController => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\abstract-api.php => line: 14 => function: Read => class: ManufacturerApi => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\api.php => line: 31 => function: gateway => class: Api => type: ->
+Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'phones.directors' doesn't exist
+Code: 42S02
+******************************************************************************************************************************
+Error occured at 2017-10-15 19:22:54
+Trace:
+file: C:\xampp\htdocs\joint\phones\back\dal\Connection.php => line: 57 => function: execute => class: PDOStatement => type: ->
+file: C:\xampp\htdocs\joint\phones\back\bl\BusinessLogicLayer.php => line: 30 => function: executeSP => class: Connection => type: ->
+file: C:\xampp\htdocs\joint\phones\back\bl\Manufacturer_BLL.php => line: 14 => function: get => class: BusinessLogicLayer => type: ->
+file: C:\xampp\htdocs\joint\phones\back\controllers\ManufacturerController.php => line: 10 => function: get_manufacturers => class: Manufacturer_BLL => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\ManufacturerApi.php => line: 17 => function: get_all_manufacturers => class: ManufacturerController => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\abstract-api.php => line: 14 => function: Read => class: ManufacturerApi => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\api.php => line: 31 => function: gateway => class: Api => type: ->
+Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'phones.directors' doesn't exist
+Code: 42S02
+******************************************************************************************************************************
+Error occured at 2017-10-15 19:36:12
+Trace:
+file: C:\xampp\htdocs\joint\phones\back\dal\Connection.php => line: 57 => function: execute => class: PDOStatement => type: ->
+file: C:\xampp\htdocs\joint\phones\back\bl\BusinessLogicLayer.php => line: 30 => function: executeSP => class: Connection => type: ->
+file: C:\xampp\htdocs\joint\phones\back\bl\Phone_BLL.php => line: 14 => function: get => class: BusinessLogicLayer => type: ->
+file: C:\xampp\htdocs\joint\phones\back\controllers\PhoneController.php => line: 11 => function: get_phones => class: Phone_BLL => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\PhoneApi.php => line: 14 => function: get_all_phones => class: PhoneController => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\abstract-api.php => line: 14 => function: Read => class: PhoneApi => type: ->
+file: C:\xampp\htdocs\joint\phones\back\api\api.php => line: 37 => function: gateway => class: Api => type: ->
+Message: SQLSTATE[42000]: Syntax error or access violation: 1305 PROCEDURE movie_project.get_phones does not exist
+Code: 42000
