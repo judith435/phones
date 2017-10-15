@@ -25,6 +25,7 @@ CREATE TABLE IF NOT EXISTS `phones`.`manufacturers` (
   `name` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`id`))
 ENGINE = InnoDB
+AUTO_INCREMENT = 9
 DEFAULT CHARACTER SET = latin1;
 
 
@@ -43,8 +44,50 @@ CREATE TABLE IF NOT EXISTS `phones`.`phones` (
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
+AUTO_INCREMENT = 5
 DEFAULT CHARACTER SET = latin1;
 
+USE `phones` ;
+
+-- -----------------------------------------------------
+-- procedure get_manufacturers
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `phones`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_manufacturers`()
+BEGIN
+
+	SELECT   id as manufacturer_id,
+			 name as manufacturer_name
+	FROM manufacturers
+    order by  name;
+    
+END$$
+
+DELIMITER ;
+
+-- -----------------------------------------------------
+-- procedure get_phones
+-- -----------------------------------------------------
+
+DELIMITER $$
+USE `phones`$$
+CREATE DEFINER=`root`@`localhost` PROCEDURE `get_phones`()
+BEGIN
+
+	SELECT   phones.id as phone_id,
+			 phones.name as phone_name,
+			 manufacturers.id as manufacturer_id,
+             manufacturers.name as manufacturer_name
+	FROM phones
+	inner join manufacturers
+	on phones.manufacturer_id = manufacturers.id
+    order by  manufacturer_name, phone_name;
+    
+END$$
+
+DELIMITER ;
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
